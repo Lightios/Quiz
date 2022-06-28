@@ -1,0 +1,250 @@
+1. Ile powstanie sierot w wyniku działania kodu: fork(); if (fork()) wait(NULL);
+odp: co najwyżej jedna sierota
+dwie
+trzy
+cztery
+2. Który algorytm poprawnie implementuje wzajemne wykluczanie za pomocą niepodzielnejoperacji zamiany wartości zmiennych (exch)? Zakładamy, że zmienna a jest współdzielona,zainicjowana na 0, natomiast b jest lokalna w każdym z procesów; SK oznacza sekcjękrytyczną.
+odp: b:=1; repeat exch(a,b) until b=0; SK; a:=0
+b:=0; repeat exch(a,b) until b=0; SK; a:=0
+b:=1; repeat exch(a,b) until b=1; SK; a:=0
+b:=0; repeat exch(a,b) until b=1; SK; a:=0
+3. Który algorytm poprawnie implementuje wzajemne wykluczanie za pomocą niepodzielnej operacji test-and-set (ts)? Zakładamy, że zmienna a jest współdzielona; SK oznacza sekcję krytyczną.
+odp: while ts(a)=1 do ; SK; a:=0
+while ts(a)=0 do ; SK; a:=0
+while ts(a)=1 do ; SK; a:=1
+while ts(a)=0 do ; SK; a:=1
+4. Dwa procesy współbieżne komunikują się przez bufor o ograniczonej pojemności. Jeden z nich jest producentem, drugi --- konsumentem. Dostęp do bufora procesy przeprowadzają według algorytmów, wykorzystujących semafory a, b, w. Producent wykonuje po kolei: P(a); (w); włożenie bajtu do bufora; V(w); V(b). Jak powinien wyglądać poprawny kodkonsumenta (,,pbzb'' oznacza pobranie bajtu z bufora)?
+odp: P(b); P(w); pbzb; V(a); V(w)
+P(a); P(w); pbzb; V(b); V(w)
+P(a); P(w); pbzb; V(a); V(w)
+P(b); P(w); pbzb; V(b); V(w)
+5. Dwa procesy współbieżne komunikują się przez bufor o pojemności 1024 bajtów. Jeden z nich jest producentem, drugi --- konsumentem. Dostęp do bufora procesy przeprowadzają według algorytmów, wykorzystujących semafory a, b, w. W szczególności kod producenta ma postad: P(a); P(w); włożenie bajtu do bufora; V(w); V(b). Jakie wartości początkowe należy nadad semaforom?
+odp: a=1024, b=0, w=1
+a=1, b=0, w=1
+a=1024, b=1, w=1
+a=1024, b=0, w=0
+6. Procesy Pi (i = 1, ...,N) wykonują w nieskończonych pętlach swoją treść, czyli są postaci:
+process Pi: for ki:=1 to 1 do { (*); Ci; (**) }
+Dodatkowo mamy tablice semaforów liczbowych s*i, j+ o rozmiarze N × N, którym nadano
+początkowo wartość d. Które fragmenty można wstawić w miejsca (*)/(**), by w dowolnej
+chwili spełniony był warunek: Vi,j = 1, ..., N : |ki - kj | <= d + 1? Liczby N oraz d to stałe.
+Procesy znają swoje numery i.
+odp: (*) for j:=1 to N do P(s[i, j]), (**) for j:=1 to N do V(s[j, i])
+(*) for j:=0 to N do P(s[i, j]), (**) for j:=1 to N do V(s[j, i])
+(*) for j:=1 to N do P(s[i, j]), (**) for j:=0 to N do V(s[j, i])
+(*) for j:=0 to N do P(s[i, j]), (**) for j:=0 to N do V(s[j, i])
+7. W którym ze stanów znajduje się proces, który wykonał na semaforze operację P, lecz nie
+wszedł do strefy krytycznej, gdyż ta jest akurat zajęta przez inny proces? Zakładamy, że
+semafor jest zaimplementowany w systemie operacyjnym.
+odp: oczekujący
+wstrzymany
+gotowy
+wykonywany
+8. W którym ze stanów znajduje się proces, który wykonał (w monitorze) operację delay?
+odp: oczekujący
+wstrzymany
+gotowy
+wykonywany
+9. Poniższy monitor służy do synchronizacji czytelników i pisarzy:
+monitor CP; var lc, lp: int:=0; qc, qp: queue;
+entry PoczPis: if lc>0 or lp>0 then delay(qp); lp:=1
+entry KonPis: lp:=0; if not empty(qc) then continue(qc) else if not empty(qp) then
+continue(qp)
+entry PoczCzyt: if lp>0 then delay(qc); ++lc; if not empty(qc) then continue(qc)
+entry KonCzyt: --lc; if not empty(qp) then continue(qp)
+Istnieje scenariusz, przy którym:
+odp: dwóch pisarzy naraz uzyska dostęp do bazy danych
+nastąpi zagłodzenie pisarzy
+nastąpi zagłodzenie czytelników
+zakleszczenie
+10. Poniższy monitor służy do synchronizacji czytelników i pisarzy:
+monitor CP; var lc, lp: int:=0; qc, qp: queue;
+entry PoczPis: if lc>0 or lp>0 then delay(qp);lp:=1
+entry KonPis: lp:=0; if not empty(qc) then continue(qc) else if not empty(qp) then
+continue(qp)
+entry PoczCzyt: if lp>0 then delay(qc); ++lc; if not empty(qc) then continue(qc)
+entry KonCzyt: --lc; if lc=0 and not empty(qp) then continue(qp)
+Istnieje scenariusz, przy którym:
+odp: nastąpi zagłodzenie pisarzy
+nastąpi zagłodzenie czytelników
+zakleszczenie
+dwóch pisarzy naraz uzyska dostęp do bazy danych
+12. Semafor liczbowy (nieograniczony) s miał wartość 10. Później wykonywano na nim
+operacje P i V; w sumie 13 razy wykonano P(s) i 5 razy V(s). Wartość semafora po tych
+operacjach to:
+odp: 2
+10
+5
+18
+13. Semafor liczbowy (nieograniczony) s miał wartość 5. Później wykonywano na nim
+operacje P i V; w sumie 8 razy wykonano P(s) i 13 razy V(s). Wartość semafora po tych
+operacjach to:
+odp: 10
+5
+0
+15
+14. Rozważmy dwa procesy, P1 i P2. Semafor binarny A jest początkowo otwarty, za B ---
+zamknięty. Przez Nx oznaczmy liczbę wykonano operacji X, przez Ny --- liczbę wykonano
+operacji Y. Kod procesów:
+process P1: while true do { P(A); X; V(B) }
+process P2: while true do { P(B); Y; V(A) }
+Wskazać najsilniejszy warunek zachodzący w dowolnej chwili:
+odp: Ny + 1 >= Nx >= Ny
+Ny + 1 > Nx >= Ny
+Ny + 1 > Nx > Ny
+Ny + 1 < Nx < Ny
+15. Mamy trzy semafory liczbowe (nieograniczone): s1, s2 i s3, zainicjowane na 1.
+Rozważamy trzy procesy. Przez nX, nY i nZ oznaczamy liczbę wykonano odpowiednich
+operacji. Kod procesów:
+process P1: while true do { P(s1); X; V(s2); V(s3) }
+process P2: while true do { P(s2); Y; V(s1); V(s3) }
+process P3: while true do { P(s3); Z; V(s2); V(s1) }
+Wskazać najsilniejszy warunek zachodzący w dowolnej chwili:
+odp: nX <= nY + nZ + 1
+nX < nY + nZ + 1
+nX <= nY + nZ
+nX < nY + nZ
+20. W pewnym systemie z pamięcią wirtualną prawdopodobieostwo odwołania do strony
+niepoprawnej wynosi 3 × 10-7, średni czas dostępu do pamięci RAM to 50 ns, a średni czas
+obsługi braku strony to 50 ms. Ile wynosi spowolnienie dostępu do pamięci spowodowane
+zastosowaniem pamięci wirtualnej?
+Inna treść: W pewnym systemie z pamięcią wirtualną prawdopodobieństwo odwołania do
+strony niepoprawnej wynosi 3 x 10^-7, średni czas dostępu do pamięci RAM to 2 ns, a
+średni czas obsługi braku strony to 2 ms. Ile wynosi (średnie) spowolnienie dostępu do
+pamięci spowodowane zastosowaniem pamięci wirtualnej?
+Wzór na dowolne dane: p * T_bs / T_ram
+odp: 30%
+10%
+5%
+40%
+21. System pamięci wirtualnej z wymianą na żądanie stosuje algorytm FIFO. System
+dysponuje czterema ramkami, które początkowo są puste. Która strona zostanie usunięta
+przy ostatnim odwołaniu, jeśli ciąg odwołań do stron przedstawia się tak: 1, 2, 3, 4, 1, 4, 3, 4,
+5?
+odp: 1
+2
+3
+4
+22. System pamięci wirtualnej z wymianą na żądanie stosuje algorytm LRU. System
+dysponuje czterema ramkami, które początkowo są puste. Która strona zostanie usunięta
+przy ostatnim odwołaniu, jeśli ciąg odwołań do stron przedstawia się tak: 1, 2, 3, 4, 1, 4, 3, 4,
+5?
+odp: 2
+1
+3
+4
+23. System pamięci wirtualnej z wymianą na żądanie stosuje algorytm LFU. System
+dysponuje czterema ramkami, które początkowo są puste. Która strona zostanie usunięta
+przy ostatnim odwołaniu, jeśli ciąg odwołań do stron przedstawia się tak: 1, 2, 3, 4, 1, 4, 3, 4,
+5?
+odp: 2
+1
+3
+4
+24. System pamięci wirtualnej z wymianą na żądanie stosuje algorytm MFU. System
+dysponuje czterema ramkami, które początkowo są puste. Która strona zostanie usunięta
+przy ostatnim odwołaniu, jeśli ciąg odwołań do stron przedstawia się tak: 1, 2, 3, 4, 1, 4, 3, 4,
+5?
+odp: 4
+1
+2
+3
+26. Które z przejść między stanami (nowy, gotowy, wykonywany, oczekujący, zakończony)
+odpowiada zakończeniu drukowania?
+odp: wykonywany › oczekujący
+gotowy > zakończony
+oczekujący > zakończony
+wykonywany > zakończony
+28. Załóżmy, że posiadamy prawo x do (własnego) pliku abc. Które polecenie zabierze nam
+to prawo?
+odp: chmod u=r abc
+chmod u+=r abc
+chmod u+=w abc
+chmod u=x abc
+30. Ile powstanie łącznie procesów wskutek uruchomienia poniższego programu?
+main() { int i; for (i = 0; i < 5; ++i) if (fork() < 0) exit(0); }
+odp: 2^5
+5
+0
+2^4
+33. W katalogu domowym użytkownika znajduje się plik moj.txt; użytkownik ma prawo
+czytania go. Poniższy kod
+char buf[NN]; int fd; close(0); fd=open(“moj.txt”, O_RDWR); dup(fd); read(0, buf, NN);
+odp: spowoduje błąd wykonania
+przeczyta dane z pliku moj.txt do bufora
+spowoduje błąd kompilacji
+-
+33.2. W katalogu domowym użytkownika znajduje się plik moj.txt; użytkownik ma do niego
+wszystkie prawa. Poniższy kod
+char buf[NN]; int fd; close(0); fd=open(“moj.txt”, O_RDWR); dup(fd); read(0, buf, NN);
+odp: przeczyta dane z pliku moj.txt do bufora
+spowoduje błąd wykonania
+spowoduje błąd kompilacji
+-
+34. W następującym kodzie:
+if (!fork()) while(1) sleep(1); else exit(0);
+odp: na pewno pojawi się sierota
+na pewno pojawi się zombie
+nie pojawi się ani sierota, ani zobmie
+-
+34.2: W poniższym kodzie:
+if (fork()) while(1) sleep(1); else exit(0);
+odp: na pewno pojawi się zombie
+na pewno pojawi się sierota
+nie pojawi się ani sierota, ani zobmie
+-
+35. W którym ze stanów (nowy, gotowy, wykonywany, oczekujący, zakończony) znajduje się
+proces, który właśnie zgłosił zapotrzebowanie na drukarkę?
+odp: oczekujący
+nowy
+gotowy
+wykonywany
+36. W bieżącym katalogu znajduje się plik o nazwie a. W konsoli wpisano polecenie `cat a`
+(ważne są odwrócone apostrofy). Czego można się spodziewać?
+odp: nie można powiedzieć bez znajomości zawartości pliku a
+wyświelenia zawartość pliku a
+błędu konsoli
+wyświetlenia tekstu "cat a"
+37. Załóżmy, że w kartotece bieżącej widoczny jest tylko jeden fizyczny plik o nazwie abc. Ile
+fizycznych plików będzie widocznych w tymże katalogu po wykonaniu podanego niżej ciągu
+poleceń?
+cp abc def; ln def ghi; cp ghi jkl; ln jkl mno;
+odp: 3
+2
+5
+1
+38. Rozważmy następujący kod. Zakładamy, że wszystkie operacje fork i exec wykonają się
+poprawnie.
+if (fork()) if (fork()) execlp(“ps”,“ps”, NULL); execlp(“ps”,“ps”,NULL);
+Ile razy wykona się program ps?
+odp: 3
+6
+1
+2
+39. Załóżmy, że w kodzie pewnego procesu znajduje się następująca linijka:
+if (fork() || !fork()) fork();
+Załóżmy ponadto, że wszystkie forki wykonają się poprawnie i że warunek logiczny
+obliczany jest leniwie (nie obliczamy prawego składnika gdy nie jest to konieczne). Ile
+nowych procesów zostanie utworzonych (nie liczymy procesu wspomnianego wyżej na
+początku)?
+odp: 4
+2
+1
+8
+41. Których funkcji systemowych Unixa/Linuxa należy użyć, by stworzyć nowy proces i
+załadować program?
+odp: Fork, exec
+samo fork jest wystarczające
+samo exec jest wystarczające
+dup
+41.2. Jakich poleceń trzeba użyć żeby stworzyć proces?
+odp: samo fork jest wystarczające
+samo exec jest wystarczające
+Fork, exec
+dup
+43. Która z funkcji systemowych Unixa nie jest potrzebna do korzystania z potoku
+nazwanego (fifo)?
+odp: pipe
+read
+write
+dup

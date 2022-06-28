@@ -1,0 +1,77 @@
+<RandomScreen>:
+    MDLabel:
+        id: contents
+        pos_hint: {"center_x": 0.5, "center_y": 0.8}
+        halign:  "center"
+        size_hint_x: 0.8
+        text: "?"
+
+    MDLabel:
+        id: answer_a
+        pos_hint: {"x": 0.2, "center_y": 0.6}
+        halign:  "left"
+        text: "?"
+        theme_text_color: "Custom"
+        text_color: 1, 1, 1, 1
+    Button:
+        background_color: 0, 0, 0, 0
+        pos_hint: {"x": 0.2, "center_y": 0.6}
+        size_hint: 0.6, 0.1
+        on_press: root.color_label( "a" )
+
+    MDLabel:
+        id: answer_b
+        pos_hint: {"x": 0.2, "center_y": 0.5}
+        halign:  "left"
+        text: "?"
+        theme_text_color: "Custom"
+        text_color: 1, 1, 1, 1
+    Button:
+        background_color: 0, 0, 0, 0
+        pos_hint: {"x": 0.2, "center_y": 0.5}
+        size_hint: 0.6, 0.1
+        on_press: root.color_label( "b" )
+
+    MDLabel:
+        id: answer_c
+        pos_hint: {"x": 0.2, "center_y": 0.4}
+        halign:  "left"
+        text: "?"
+        theme_text_color: "Custom"
+        text_color: 1, 1, 1, 1
+    Button:
+        background_color: 0, 0, 0, 0
+        pos_hint: {"x": 0.2, "center_y": 0.4}
+        size_hint: 0.6, 0.1
+        on_press: root.color_label( "c" )
+
+    MDLabel:
+        id: answer_d
+        pos_hint: {"x": 0.2, "center_y": 0.3}
+        halign:  "left"
+        text: "?"
+        theme_text_color: "Custom"
+        text_color: 1, 1, 1, 1
+    Button:
+        background_color: 0, 0, 0, 0
+        pos_hint: {"x": 0.2, "center_y": 0.3}
+        size_hint: 0.6, 0.1
+        on_press: root.color_label( "d" )
+
+    MDRaisedButton:
+        id: check
+        pos_hint: {"center_x": 0.35, "center_y": 0.2}
+        text: "Check answer"
+        on_press: root.check_answer()
+
+    MDRaisedButton:
+        id: next
+        pos_hint: {"center_x": 0.65, "center_y": 0.2}
+        text: "Next question"
+        on_press: root.update_labels()
+
+    MDRaisedButton:
+        id: exit
+        pos_hint: {"center_x": 0.5, "center_y": 0.1}
+        text: "Exit"
+        on_press: app.root.ids.screen_manager.current = "main"

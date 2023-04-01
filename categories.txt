@@ -1,0 +1,12 @@
+mild hapiness: amused, contented, gratified, pleased
+happiness: cheerful, glad, satisfied, upbeat
+intense happiness: ecstatic, elated, exhilarated, overjoyed
+mild sadness: listless, low, upset, wistful
+sadness: dejected, discouraged, dispirited, gloomy
+instense sadness: devastated, gutted, inconsolable, miserable
+mild anger: cross, displeased, frustrated, peeved
+anger: exasperated, indignant, offended, resentful
+intense anger: incensed, irate, livid, outraged
+mild fear and anxiety: apprehensive, disconcerted, uneasy, wary
+fear and anxiety: alarmed, rattled, scared, unnerved
+intense fear and anxiety: aghast, filled with dread, panic-stricken, petrified

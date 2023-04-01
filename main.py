@@ -2,11 +2,11 @@ from kivy.lang import Builder
 from kivymd.app import MDApp
 
 import main_screen
-import random_screen
+from screens import test_screen, abc_screen, categories_screen
 import data_loader
 
 Builder.load_file( "main_screen.kv" )
-Builder.load_file( "random_screen.kv" )
+Builder.load_file( "screens/test_screen.kv" )
 
 
 class QuizApp( MDApp ):

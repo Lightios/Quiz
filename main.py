@@ -1,5 +1,7 @@
+from kivy.clock import Clock
 from kivy.lang import Builder
 from kivymd.app import MDApp
+from kivymd.uix.menu import MDDropdownMenu
 
 import main_screen
 from screens import test_screen, abc_screen, categories_screen
@@ -10,6 +12,8 @@ Builder.load_file( "screens/test_screen.kv" )
 
 
 class QuizApp( MDApp ):
+    TYPES = ["abc", "categories"]
+
     def __init__( self, **kwargs ):
         super().__init__( **kwargs )
 

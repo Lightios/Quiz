@@ -1,7 +1,7 @@
 <TestScreen>:
     MDLabel:
         id: contents
-        pos_hint: {"center_x": 0.5, "center_y": 0.8}
+        pos_hint: {"center_x": 0.5, "center_y": 0.9}
         halign:  "center"
         size_hint_x: 0.8
         text: "?"
@@ -9,18 +9,22 @@
     Answer:
         letter: "a"
         id: answer_a
-        pos_hint: {"x": 0.2, "center_y": 0.6}
+        pos_hint: {"x": 0.2, "center_y": 0.7}
     Answer:
         letter: "b"
         id: answer_b
-        pos_hint: {"x": 0.2, "center_y": 0.5}
+        pos_hint: {"x": 0.2, "center_y": 0.6}
     Answer:
         letter: "c"
         id: answer_c
-        pos_hint: {"x": 0.2, "center_y": 0.4}
+        pos_hint: {"x": 0.2, "center_y": 0.5}
     Answer:
         letter: "d"
         id: answer_d
+        pos_hint: {"x": 0.2, "center_y": 0.4}
+    Answer:
+        letter: "e"
+        id: answer_e
         pos_hint: {"x": 0.2, "center_y": 0.3}
 
     MDRectangleFlatButton:
@@ -28,6 +32,12 @@
         pos_hint: {"center_x": 0.35, "center_y": 0.2}
         text: "Check answer"
         on_press: root.check_answer()
+
+    MDRectangleFlatButton:
+        id: clear
+        pos_hint: {"center_x": 0.5, "center_y": 0.2}
+        text: "Clear selection"
+        on_press: root.clear_selection()
 
     MDRectangleFlatButton:
         id: next
@@ -42,16 +52,4 @@
         on_press: app.root.ids.screen_manager.current = "main"
 
 
-<Answer>:
-    MDLabel:
-        halign:  "left"
-        pos_hint: {"center_x": 0.5, "center_y": 0.5}
-        text: "?"
-        theme_text_color: "Custom"
-        text_color: 1, 1, 1, 1
-        id: label
-    Button:
-        background_color: 1, 0, 0, 0
-        pos_hint: {"x": 0, "center_y": 0.5}
-        size_hint: 0.6, 0.1
-        on_press: root.parent.color_label( root.letter )
+

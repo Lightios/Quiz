@@ -1,0 +1,743 @@
+1. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe
+
+A)        W podpisie cyfrowym tekst jawny NIE jest szyfrowany, tylko szyfrowany jest jego skrót (wygenerowany funkcją skrótu)
+
+B)        Przy podpisywaniu tekstu jawnego jest wykorzystywany klucz prywatny osoby podpisującej
+
+C)        W celu zaszyfrowania wiadomości, która ma być przesłana z X do Y tak, że tylko Y będzie mógł ją odczytać, X powinien użyć swojego klucza prywatnego, natomiast Y do odszyfrowania używa klucza publicznego X (sprawdzając jego oryginalność)
+
+D)        Przykładowe algorytmy szyfrowania z kluczem symetrycznym to AES i MD5
+
+E)        Jednym z najpopularniejszych algorytmów szyfrowania z kluczem symetrycznym jest RSA
+
+2. Jaki jest adres sieci dla adresu IP 202.202.62.15/22 ? Sprawdzone Dobrze jest!
+
+A        11001010.11001010.00111100.00000000
+
+B        11001010.11001010.00111110.00000000
+
+C        11001010.11001010.01111110.00001111
+
+D        01001010.01001010.00000000.00000000
+
+E)         01001010.01001010.00111110.00000000
+
+3. W protokołach szyfrujących dane przesyłane przez sieć (np. TLS i SSL)
+
+A)        Szyfrowanie danych odbywa się przy pomocy algorytmu z kluczem symetrycznym a uzgodnienie klucza może być realizowane z wykorzystaniem algorytmu z kluczem publicznym i prywatnym
+
+B)        Szyfrowanie danych odbywa się przy pomocy algorytmu z kluczem publicznym i prywatnym a uzgodnienie kluczy następuje z wykorzystaniem algorytmu z kluczem symetrycznym
+
+C)        Szyfrowanie danych odbywa się przy pomocy algorytmu z kluczem publicznym i prywatnym, uzgodnienie kluczy również następuje z wykorzystaniem algorytmu z kluczem symetrycznym
+
+D)        Szyfrowanie danych odbywa się przy pomocy algorytmu z kluczem publicznym i prywatnym natomiast uzgodnienie kluczy następuje z wykorzystaniem certyfikatów
+
+E)        Szyfrowanie danych odbywa się przy pomocy algorytmu z wykorzystaniem funkcji haszującej (funkcji skrótu) i certyfikatów
+
+4. Wybierz zdanie prawdziwe (dotyczy protokołów routowania)
+[a]
+
+A)        W protokole RIP natychmiastowe aktualizacje pomagają unikać pętli routowania
+
+B)        W protokole RIP split horizon pomaga unikać pętli routowaniaudp
+
+C)        W protokole EIGRP wyznaczany jest osiągalny następca (feasible successor), dzięki czemu następuje szybka zbieżność (o ile feasible successor istnieje)
+
+D)        W protokole OSPF pętle mutowania mogą powstać jeśli wyłączy się mechanizm split horizon
+
+E)        W protokole OSPF wyznaczany jest osiągalny następca (feasible successor), dzięki czemu następuje szybka zbieżność (o ile feasible successor istnieje)
+
+5. Wybierz zdanie prawdziwe (dotyczy protokołu IPv4, protokołu TCP
+
+i protokołu UDP)
+
+A)        Nagłówek IPv4 zawiera pole TTL a nagłówek TCP zawiera m.in. znaczniki (flagi) SYN, ACK, FIN
+
+B)        Nagłówek IPv4 zawiera pola Numer portu źródłowego i Numer portu docelowego
+
+C)        Nagłówek TCP zawiera pole TTL a nagłówek IP zawiera m.in. znaczniki (flagi) SYN, ACK, FIN
+
+D)        Nagłówek UDP zawiera pole MSS a nagłówek TCP zawiera pole numer portu
+
+E)        Nagłówek IPv4 zawiera pole MTU
+
+6. Wybierz prawdziwe zdanie charakteryzujące termin skumulowane potwierdzanie
+
+A)        Jeśli w ciągu odebranych segmentów któregoś brakuje, to odbiorca zawiadamia nadawcę, że oczekuje na bajt o numerze o jeden większym od numeru ostatniego bajta z ciągłego bloku kolejnych otrzymanych segmentów, NIE potwierdza bajtów, które już otrzymał, ale są ulokowane za "dziurą" (tj. brakującym segmentem)
+
+B)        Odbiorca potwierdza liczbę wszystkich odebranych danych jako sumę wielkości odebranych pakietów w połączeniu
+
+C)        Odbiorca potwierdza tylko ile w sumie odebrał segmentów, brakujący segment i tak zostanie retransmitowany
+
+D)        Odbiorca zawsze zawiadamia nadawcę, że oczekuje na bajt o numerze o jeden większym od numeru ostatniego bajtu ostatniego odebranego segmentu[b]
+
+E)        Odbiorca nigdy NIE potwierdza odebranych danych dopóki NIE wypełni się okno odbiorcze
+
+7. MTU to[c]
+
+A)        Wielkość największego datagramu (pakietu IP), jaki może być przesłany przez pewną sieć (lub połączone sieci) w ramce, przy wykorzystaniu konkretnej technologii, np. Ethernet
+
+B)        Największy rozmiar segmentu, jaki może być przesłany przy pewnym połączeniu TCP
+
+C)        Najszybsza trasa do pewnego hosta
+
+D)        Najkrótsza trasa do pewnego hosta
+
+E)        Maksymalny rozmiar ramki w danej technologii sieciowej, np. Ethernet[d]
+
+8. Wybierz zdanie prawdziwe
+
+A)        ARP może być wykorzystany do wykrycia zduplikowanych adresów IP w segmencie sieci lokalnej
+
+B)        ARP wykorzystuje multicast do otrzymania adresu MAC na podstawie IP
+
+C)        wpisy w ARP cache sad trwałe, ale tylko do momentu restartowania systemu operacyjnego
+
+D)        ARP przesyła komunikat o nieosiągalnym miejscu docelowym w sieci
+
+E)        ARP jest wykorzystywany przez routery do wyboru optymalnej trasy w sieciach lokalnych
+
+9. Wybierz stwierdzenie prawdziwe
+
+A)        W IPv6 zamiast protokołu ARP stosowany jest ICMPv6
+[e]
+
+B)        W IPv6 fragmentacja datagramów odbywa się w routerach po drodze pakietu
+
+C)        W IPv6 nagłówek jest uproszczony i krótszy od nagłówka IPv4[f]
+
+D)        W IPv6 jest tylko jeden rodzaj nagłówka
+
+E)        W nagłówku IPv6 NIE ma odpowiednika pola TTL z IPv4, gdyż zastępują go inne mechanizmy
+
+10. DNS obejmuje
+
+A)        Określenie numeru IP na podstawie nazwy domenowej i odwrotnie
+
+B)        Określenie numeru IP na podstawie nazwy domenowej, określenie nazwy domenowej na podstawie numeru IP NIE jest możliwe (co czyni sieć w pewnym stopniu bezpieczniejszą)
+
+C)        Dynamiczny przydział IP oraz rozwiązywanie nazw
+
+D)        Przydzielanie MAC do IP, dynamiczny przydział IP oraz rozwiązywanie nazw
+
+E)        Rozetowanie dynamiczne i dynamiczne przydzielanie adresów IP
+11. Rozważmy sieć 150.16.4.0 z maską z maską 255.255.252.0. Wybierz zdanie prawdziwe
+
+A)        Ani komputer o adresie 150.16.6.1 ani komputer 150.16.8.1 NIE są w rozważanej sieci
+
+B)        Żadna z pozostałych (powyżej i poniżej) odpowiedzi NIE jest prawidłowa
+
+C)        Adres sieci jest prawidłowy, ale maska NIE
+
+D)        Komputer 150.16.8.1 jest w podanej sieci ale komputer 150.16.6.1 NIE jest
+
+E)        Komputery o adresach 150.16.6.1 oraz 150.16.8.1 są obydwa w rozważanej sieci
+
+12. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+[g]
+
+A) zapytania ARP NIE są wysyłane na adres rozgłoszeniowy adres IPv4 (same jedynki)
+
+B odpowiedź ARP jest wysyłana na adres jednostkowy (unicast) MAC
+
+C protokół ARP wykorzystuje komunikaty ICMP
+
+D komunikaty protokołu ARP są przesyłane w pakietach IPv4
+
+E) protokół ARP daje możliwość określenia adresu IPv4 na podstawie znanego adresu MAC
+
+13. ??? Proszę wybrać zdanie prawdziwe
+
+A)        W WPA2 stosowany jest algorytm szyfrowania z kluczem symetrycznym, jest to AES, natomiast w WPA stosowany jest RC4
+
+B)        W WPA2 szyfrowanie jest realizowane z wykorzystaniem algorytmu z kluczem publicznym i prywatnym o nazwie RCA
+
+C)        W WPA stosowany jest algorytm szyfrowania z kluczem publicznym i prywatnym o nazwie RC4[h]
+
+D)        W WPA2 stosowany jest algorytm szyfrowania z kluczem publicznym i prywatnym, jest to AES, natomiast w WPA stosowany jest RCA
+
+E)        W WPA i WPA2 szyfrowanie opiera się na algorytmie z kluczem asymetrycznym, jest to MD5
+
+14. Spanning Tree Protocol
+
+A)        Jest wykorzystywany do automatycznego blokowania pewnych portów w połączonych przełącznikach warstwy drugiej (switch) tak, by NIE było burzy broadcastów // z
+
+B)        Jest używany do wyznaczania najbliższego sąsiada routera w protokole OSPF
+
+C)        Jest wykorzystywany w routerach w celu poprawnego skonfigurowania VPN
+
+D)        Jest wykorzystywany w przełącznikach warstwy drugiej (switch) w celu skonfigurowania VLAN[i][j]
+
+E)        Jest wykorzystywany w OSPF do wyznaczania najkrótszych ścieżek
+
+15. Które z poniższych zdanie (zdania) charakteryzuje (charekteryzują) połączenie typu trunk
+
+A)        Jest to połączenie jednym kablem (zamiast kilku) np. dwóch przełączników (switch), na których skonfigurowano sieci VLAN
+
+B)        Jest to bezpośrednie połączenie dwóch routerów omijające pośrednie routery domyślne (bypass)
+
+C)        Jest to połączenie dwóch routerów przy pomocy technologii Frame Relay
+
+D)        Jest to połączenie koncentratora (hub) 100 Mbps z portem przełącznika (switch) 10Mbps
+
+E)        Jest to połączenie koncentratora (hub) z portem przełącznika (switch) w sytuacji, kiedy porty tych urządzeń mają różną szerokość pasma (bandwith)
+
+16. Proszę wybrać zdanie (zdania) prawdziwe (dotyczy programowania z wykorzystaniem interfejsu gniazd)
+
+A) W programie klienta TCP funkcja connect m.in. powoduje przypisanie do gniazda dynamicznie przydzielonego numeru portu
+
+B)        W programie serwera TCP funkcja bind m.in. przypisuje numer portu do gniazda, zatem trzeba ten numer wcześniej ustawić w strukturze adresowej typu sockaddr_in
+
+C)        W programie klienta TCP funkcja socket m.in. powoduje przypisanie do gniazda dynamicznie przydzielonego numeru portu
+
+D)        W programie serwera TCP gniazdo, do którego deskryptor zwróciła funkcja socket jest potem wykorzystywane w funkcjach np. read i write do odczytywania i przesyłania danych do klienta
+
+E)        W programie serwera TCP funkcja listen powoduje oczekiwanie na połączenie klienta i jest odpowiedzialna po stronie serwera za nawiązanie trójfazowego połączenia (three way hanshake)
+
+17. Proszę wybrać zdanie (zdania) prawdzimulticd nswe
+
+A)        IPSec zawiera protokół AH i ESP, przy czym AH umożliwia sprawdzenie ospfautentyczności i integralności ale NIE umożliwia szyfrowania, ESP umożliwia zarówno szyfrowanie, jak i sprawdzenie autentyczności i integralności przesyłanych danych
+
+B)        Zarówno AH, jak i ESP mogą działać dwóch trybach: w trybie transportu i w trybie tunelowania
+
+C)        IPSec jest bezpiecznym protokołem warstwy aplikacji
+
+D)        IPSec zawiera protokół AH i ESP, przy czym AH umożliwia szyfrowanie ale NIE umożliwia sprawdzenia autentyczności i integralności, ESP umożliwia sprawdzenie autentyczności i integralności przesyłanych danych, ale NIE umożliwia szyfrowania
+
+E)        Pakiet wykorzystujący AH w trybie transportu ma dwa nagłówki IPv4
+
+18. Proszę wybrać zdanie (zdania) prawdziwe
+
+A)        Protokół routowania OSPF opiera swoje działanie na algorytmie Dijkstry wyznaczania najkrótszych ścieżek w grafie, natomiast protokół RIPv2 na agorytmie Belmana Forda
+
+B)        Jeśli w protokole OSPF do jednego przełącznika Ethernet podłączone są co najmniej dwa routery, to jeden z nich będzie wybrany jako DR
+
+C)        Protokół routowania RIPv1 opiera swoje działanie na algorytmie Dijkstry wyznaczania najkrótszych ścieżek w grafie, natomiast protokół OSPF na agorytmie Belmana Forda
+
+D)        Protokół routowania RIPv2 oraz protokół OSPF opiera swoje działanie na algorytmie Dijkstry, natomiast RIPv1 i IGRP na agorytmie Belmana Forda
+
+E)        W protokołach routowania wektora odległości routery cyklicznie (np. co 30 sekund) wysyłają do wszystkich swoich sąsiadów swoje tablice routowania
+
+19. ??? Proszę wybrać zdanie (zdania) prawdziwe (chyba jest okej)
+
+A)        224.0.0.9 to przykład adresu klasy D, wykorzystywanego w multiemisji (multicast)
+
+B)        PIM jest protokołem routowania wykorzystywanym w multiemisji (multicast)
+
+C)        Multiemisja wykorzystuje protokół ICMP do komunikacji odbiornika (komputera) z routerem
+
+D)        Multiemisja (multicast) NIE daje możliwości przesyłania datagramów UDP
+
+E)        IGMP jest protokołem routowania wykorzystywanym w multiemisji (multicast)
+
+20. Proszę wybrać zdanie (zdania) prawdziwe
+
+A)        Dla adresu 230.30.30.30 da się wyliczyć odpowiadający mu adres MAC (bez konieczności wykorzystywania żadnych dodatkowych protokołów, np. ARP)
+
+B)        Dla 128 bitowego adresu IPv6 multicastu da się wyliczyć odpowiadający mu 48 bitowy adres MAC (bez konieczności wykorzystywania żadnych dodatkowych protokołów, np. ARP)
+
+C)        Jak komputer szuka adresu MAC na podstawie znanego adresu IPv6, to odpowiedni komunikat może dotrzeć od razu do właściwego komputera[k]
+
+i tylko do niego (zamiast do wszystkich jak to było w IPv4)
+
+D)        Adresu IPv6 typu "solicited-node multicast" NIE da się wyliczyć na podstawie adresu jednostkowego IPv6
+
+E)        ::127.0.0.1 jest adresem pętli zwrotnej w IPv6
+
+21. Proszę wybrać zdanie (zdania) prawdziweARP
+
+A)        W IPv6 protokół ARP NIE jest wykorzystywany, zamiast niego stosowane są komunikaty ICMPv6
+
+B)        Adres IPv6 typu "solicited-node multicast" jest wykorzystywany, jeśli komputer chce uzyskać adres MAC pewnego innego komputera z tej samej sieci lokalnej
+
+C)        Adres składający się z 128 jedynek jest adresem rozgłoszenia w IPv6[l][m]
+
+D)        Adresy IPv6 mają prostszą strukturę (mniej pól) i są krótsze od adresów IPv4 (dzięki temu routery sprawniej je obsługują)
+
+E)        W nagłówku IPv6 jest pole zawierające sumę kontrolną nagłówka
+
+22. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        Jeśli w protokole TCP klient ma n bajtów wolnego miejsca w swoim buforze odbiorczym, to może to zgłosić w polu rozmiar okna w nagłówku segmentu przesyłanego do serwera
+
+B)        Technologia Frame Relay jest technologią WAN typu NBMA
+
+C)        Algorytm Karna określa, że można wysłać tylko pojedyncze niepotwierdzone małe segmenty TCP
+
+D)        zasada dzielonego horyzontu określa, że router przesyła cały swój wektor odległości tylko do routerów odległych nie więcej niż zadaną liczbę skoków (horyzont)
+
+E)        certyfikat cyfrowy standardu X.509 zawiera m.in. klucz publiczny i klucz prywatny i jest podpisany cyfrowo przez Certificaton Authority
+
+23. Adres 191.168.7.0 z maską 255.255.252.0 to adres
+
+A Hosta
+
+B Sieci
+
+C Niepoprawny
+
+ D)        klasy C
+
+E)        Rozgłoszenia w podsieci lokalnej
+
+24. Proszę wybrać zdanie (zdania) prawdziwe
+
+A)        Opóźnione potwierdzanie jest celowym mechanizmem w TCP, usprawniającym komunikację
+
+B)        Jako że UDP jest protokołem bezpołączeniowym, zjawisko opóźnionego potwierdzania w nim w ogóle nie występuje
+
+C)        Opóźnione potwierdzanie jest zjawiskiem niekorzystnym, występującym w TCP wskutek przeciążenia routerów (congestion)
+
+D)        Opóźnione potwierdzanie w TCP występuje wskutek syndromu głupiego okna (silly window syndrome)
+
+E)        Opóźnione potwierdzanie w TCP występuje wskutek błędnego wyliczenia RTO
+
+25. Adres 100.100.100.95/28 to adres
+
+A) Rozgłoszenia w pewnej sieci lokalnej
+
+B Klasy B
+
+C Sieci  Niepoprawny E) Hosta
+
+26. Które (który) z poniższych zapisów są prawidłowymi zapisami adresu IPv6?
+
+A 2002:11:1111::11
+
+B fe80:1a1a:2b2b:3c3c:4d4d:5e5e:0:1
+
+C 2001::500::3:42
+
+D        fe80ab cd :1234abcd :01010101: abcdefab
+
+E) fe80:0:0:0:0x:Ox:15ab:1234
+
+27. Które z poniższych pole znajduje się w nagówku UDP, a NIE znajduje się w nagówku IPv4?
+
+A Adres MAC
+
+B Numer portu
+
+C Numer segmentu
+
+D Adres IP nadawcy i odbiorcy
+
+E) TTL
+28. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A pole Hop Limit znajduje się w nagłówku IPv6
+
+B są takie segmenty TCP, które NIE są potwierdzane[n]
+
+C  pole TTL znajduje się w nagłówku TCP i NIE znajduje się w nagłówku UDP
+
+D) pole Przesunięcie fragmentu znajduje się w nagłówku TCP[o]
+
+E) nagłówek TCP zawiera sumę kontrolną, ale nagłówek UDP NIE zawiera pola sumy kontrolnej
+29. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        Konfiguracja określana jako router na kiju lub router on a stick polega na połączeniu routera przy pomocy jednego kabla do switcha, na którym są skonfigurowane różne sieci VLAN. Dzięki temu routerowi może działać komunikacja (przesyłanie pakietów) między VLAN-ami
+
+B)        Łącze typu trunk umożliwia połączenie dwóch przełączników (switch) warstwy trzeciej ze zdefiniowanym sieciami VLAN i wówczas do komunikacji między tymi sieciami NIE jest potrzebny oddzielny router
+
+C)        Różne sieci VLAN zdefiniowane na tym samym przełączniku muszą mieć różne adresy IP (adresy sieci)
+
+D)        Różne sieci VLAN zdefiniowane na tym samym przełączniku muszą mieć ten sam adres IP sieci, natomiast ramki zawierają dodatkowe tagi oznaczające przynależność do VLANu[p][q][r][s][t]
+
+E)        Do poprawnej pracy VLANów zdefiniowanych na przełącznikach (switch) warstwy drugiej niezbędny jest protokół STP
+
+30. Który z poniższych adresów jest adresem sieci, w której można zaadresować maksymalnie do 126 hostów?
+
+A        110.110.17.0/25
+
+B        110.110.17.0/23
+
+C        110.110.17.0/24
+
+D        110.110.17.64/26
+
+E) żaden z podanych w pozostałych podpunktach (powyżej i poniżej)
+
+1. Kolejność warstw w modelu ISO OSI jest następująca
+
+A)        fizyczna, łącza danych, sieci, transportu, sesji, prezentacji, aplikacji
+
+B)        fizyczna, łącza danych, transportu, sieci, prezentacji, sesji, aplikacji
+
+C)        fizyczna, łącza danych, sieci, transportu, prezentacji, sesji, aplikacji
+
+D)        fizyczna, łącza danych, transportu, sieci, sesji, prezentacji, aplikacji
+
+E)        fizyczna, łącza danych, sesji, sieci, transportu, prezentacji, aplikacji
+2. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        rozmiar okna w nagłówku TCP oznacza liczbę bajtów, które odbiorca może zaakceptować (poczynając od bajtu o numerze podanym w polu numer potwierdzenia).
+
+B)        algorytm Nagle-a określa, że można wysłać tylko pojedyncze niepotwierdzone małe segmenty TCP
+
+C)        algorytm Nagle-a określa, że RTT nie jest obliczany dla segmentu retransmitowanego
+
+D)        nagłówek TCP zawiera pole TOS (type of services)
+
+E)        standardowe zamknięcie połączenia TCP wymaga przesłania trzech segmentów
+3. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe. Zakładamy, że wszystkie wysłane segmenty TCP dotarły do celu.
+
+A)        jeśli ostatni przesłany bajt w połączeniu klienta z serwerem TCP ma numer 1023, to serwer potwierdza ten fakt wysyłając liczbę 1024 do klienta
+
+B)        jeśli segment TCP zostanie nadesłany z niepoprawna sumą kontrolną, to jest odrzucany i NIE jest wysyłany komunikat ICMP o tym
+
+C)        jeśli ostatni przesłany segment w połączeniu klienta z serwerezasadam TCP ma numer 127 (przesłano już 127 segmentów), to serwer potwierdza ten fakt wysyłając liczbę 127 do klienta
+
+D)        jeśli ostatni przesłany segment w połączeniu klienta z serwerem TCP ma numer 127 (czyli przesłano już 127 segmentów), to serwer potwierdza ten fakt wysyłając liczbę 128 do klienta
+
+E)        jeśli ostatni przesłany bajt w połączeniu klienta z serwerem TCP ma numer 1023, to serwer potwierdza ten fakt wysyłając liczbę 1023 do klienta
+4.??? Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        proponowana wartość MSS (maximum segment size) jest przesyłana w opcjach nagłówka TCP, zatem nagłówek taki jest większy niż 20 bajtów[u][v]
+
+B)        połączenie TCP może być nawiązane po wymianie trzech segmentów (SYN; SYN+ACK; ACK), czyli na drodze trójfazowego uzgodnienia; może być również nawiązane po wymianie czterech sementów (SYN; SYN; SYN+ACK; SYN+ACK)[w]
+
+C)        selektywne potwierdzanie nadchodzących segmentów jest realizowane w IPv6 poprzez ICMPv6
+
+D)        Okno nadawcze w TCP ma lewą i prawą krawędź, które przesuwają się w prawo w miarę nadchodzacych nowych segmentów, wielkość tego okna jest równa wielkości bufora wykorzystywanego do nadawania dla tego połączenia TCP
+
+E)        aby przeciwdziałać syndromowi głupiego okna (silly window syndrome) stosuje się opóźnione potwierdzanie
+5. ??? Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        zastosowanie zasady dzielonego horyzontu powoduje, że router nie przesyła do wszystkich łączy całych wektorów odległości, tylko ich części
+
+B)        w protokole OSPF zasada dzielonego horyzontu nie może być stosowana ???
+
+C)        wadą protokołów wektora odległości jest to, że routery przekazują między sobą całe swoje tablice routowania  
+
+D)        jeśli trasa jest w stanie hold-down, to w tym czasie żadna aktualizacja tej trasy nie jest akceptowana przez router[x][y]  ???
+
+E)        w protokole RIP (i innych protokołach wektora odległości) po osiągnięciu czasu okreslonego przez Invalid timer trasa jest usuwana z tablicy routowania
+6. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A) odległość administracyjna (administratove distance) jest brana
+
+pod uwagę przy porównywaniu dwóch tras do tej samej sieci, ale uzyskanych z różnych protokołów routowania[z]
+
+B)        protokoły wektora odległości są oparte na algorytmie Bellmana Forda wyznaczania najkrótszych ścieżek w grafie
+
+C)        protokoły stanu łącza są oparte na algorytmie Bellmana Forda wyznaczania najkrótszych ścieżek w grafie
+
+D)        potokoły wektora odległości są oparte na algorytmie Dijkstry wyznaczania najkrótszych ścieżek w grafie
+
+E)        potokoły stanu łącza są oparte na algorytmie Dijkstry wyznaczania najkrótszych ścieżek w grafie
+7. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe. Dotyczy interfejsu gniazd.
+
+A)        w serwerze iteracyjnym podobnie jak w serwerze współbieżnym wieloprocesowym klient jest obsługiwany przez inne gniazdo niż to, na którym na serwerze uruchomiona była funkcja bind
+
+B)        funkcja close(s) nie zawsze zamyka gniazdo s, jeśli liczba dowiązań do gniazda jest większa niż jeden to tylko zmniejsza tę liczbę o 1
+
+C)        aby w programie klienckim do gniazda TCP był przypisany jakiś numer portu (np. jakiś dynamicznie przydzielony) musi być wywołana funkcja bind
+
+D)        funkcja fork zwraca do procesu macierzystego numer procesu potomnego a do procesu potomnego zwraca numer procesu macierzystego
+
+E)        po wybraniu przez funkcję select() gotowego gniazda program kliencki wywołuje funkcję connect() na tym gnieździe
+8. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe (dotyczy DNS).
+
+A)        poszukiwanie odwrotne (reverse), tj. wyszukanie nazwy domenowej na podstawie adresu IP jest realizowane z wykorzystaniem domeny arpa.in-addr
+
+B)        standardowo między klientem a domyślnym serwerem DNS realizowane jest zapytanie rekurencyjne
+
+C)        standardowo między klientem a domyślnym serwerem DNS realizowane jest zapytanie iteracyjne
+
+D)        standardowo między serwerami DNS jest realizowane przeszukiwanie rekurencyjne
+
+E)        obecnie jest 13 typów głównych serwerów DNS oznaczonych literami, przy czym wszystkie serwery określone tą samą literą mają jednakowy adres IPv4, chociaż są umieszczone w różnych miejscach świata
+9. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        jednym połączeniem typu trunk można przyłączyć kilka sieci VLAN do routera
+
+B)        przekazywanie pakietów z różnych sieci VLAN może być realizowane przez router, ale zamiast routera można też wykorzystać przełącznik (switch) warstwy 3[aa][ab]
+
+C)        transmisja danych między różnymi sieciami VLAN jest realizowana z wykorzystaniem adresów rozgłoszenia grupowego (multicast)
+
+D)        komputer przyłączony do sieci VLAN ma przynajmniej dwa adresy IP - jeden z sieci oryginalnej, drugi z przypisanej sieci VLAN
+
+E)        komputer przypisany do pewnej sieci VLAN powinien być podłączony do przełącznika ethernet za pomocą łącza typu trunk
+10. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        w protokole STP wszystkie porty niebędące portami do korzeni (root ports) ani portami wyznaczonymi (designated ports) są blokowane
+
+B)        w protokole STP każdy przełącznik z wyjątkiem korzenia wyznacza dokładnie jeden port do korzenia (root port)
+
+C)        w stanie blocking protokołu STP port nie przyjmuje ani nie wysyła ramek BPDU
+
+D)        w protokole RSTP porty typu alternate są wyznaczane na wyznaczonym przełączniku (designated switch)
+
+E)        w protokole RSTP porty typu backup NIE są wyznaczane na wyznaczonym przełączniku (designated switch)
+11. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        w celu podpisania jawnego tekstu podpisujący używa swojego klucza prywatnego do zaszyfrowania skrótu
+
+B)        w celu zaszyfrowania wiadomości, która ma być przesłana z A do B i przeczytana przez B, A powinien użyć klucza publicznego B
+
+C)        w celu zaszyfrowania wiadomości, która ma być przesłana z A do B i przeczytana przez B, A powinien swojego klucza prywatnego
+
+D)        zalecanym asymetrycznym algorytmem szyfrowania jest obecnie AES
+
+E)        Diffy Hellman jest przykładem algorytmu szyfrownia z kluczem symetrycznym
+12. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A) Protokół ARP nie wykorzystuje komunikatów ICMP
+
+ B)        zapytania ARP są wysyłane na adres rozgłoszeniowy adres IPv4 (same jedynki)
+
+C)        protokół ARP może spowodować zmianę tablicy routowania hosta na podstawie komunikatu o przekierowaniu
+
+D)        protokół ARP daje możliwość określenia adresu IPv4 na podstawie znanego adresu MAC
+
+E)        protokół ARP daje komputerowi możliwość wykrycia, że w segmancie sieci lokalnej jest już komputer z takim samym adresem IPv4[ac]
+13. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        certyfikat cyfrowy standardu X.509 zawiera klucz publiczny, nie zawiera klucza prywatnego, jest podpisany cyfrowo przez Certificaton Authority
+
+B)        certyfikat cyfrowy standardu X.509 może być wykorzystany w celu złożenia (utworzenia) podpisu cyfrowego
+
+C)        certyfikat cyfrowy standardu X.509 zawiera klucz publiczny
+
+i klucz prywatny i jest podpisany cyfrowo przez Certificaton Authority
+
+D)        certyfikat cyfrowy standardu X.509 zawiera klucz symetryczny
+
+i jest podpisany cyfrowo przez Certificaton Authority
+
+E)        certyfikat cyfrowy standardu X.509 zawiera m.in. klucz algorytmu MD5 i jest podpisany cyfrowo przez Certificaton Authority
+14. Adres 116.25.6.0 z maską 255.255.252.0 to adres
+
+A)        Sieci
+
+B)        Niepoprawny
+
+C)        Hosta
+
+D)        IPv6
+
+E)        Rozgłoszenia w podsieci lokalnej
+15. Adres 115.27.4.95/28 to adres
+
+A)        Sieci
+
+B)        Niepoprawny
+
+C)        Hosta
+
+D)        IPv6
+
+E)        Rozgłoszenia w pewnej lokalnej
+16. Które z poniższych zapisów są prawidłowymi zapisami adresu IPv6?
+
+A)        2001:500:3::42
+
+B)        ::1
+
+C)        FE80::1A2B::ABCD
+
+D)        FE80:1A1A:2B2B:3C3C:B3FF:FE80:01BA:FE1E:ABCD
+
+E)        FE80:0:0:0:X202:GC12:FE1E:8329
+17. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        w sieci (”wyspie”) 6to4 publiczny adres IPv4 routera granicznego jest zawarty w adresach IPv6 wszystkich komputerów w tej sieci
+
+B)        wszystkie routery IPv6 na świecie podłączone do jakiejkolwiek wyspy 6to4 powinny zgłaszać do sieci IPv6 taki sam prefiks; inaczej mówiąc, z punktu widzenia routerów IPv6 wszystkie wyspy 6to4 są postrzegane jako jedna sieć i nie jest ważny punkt wejścia do tej sieci
+
+C)        w sieci (”wyspie”) IPv6 6to4 kady komputer musi mieć zaimplementowane dwa stosy protokołów IPv4 i IPv6 (dual stack) i pakiety IPv6 są kapsułkowane w pakietach IPv4
+
+D)        w sieci (”wyspie”) 6to4 adresy IPv6 są konstruowane według schematu: zera a po nich adres IPv4 zapisany w notacji dziesiętno kropkowej lub szesnastkowo
+
+E)        w celu połączenia sieci (”wysp”) 6to4 należy skonfigurować tunele między routerami 6to4
+18. ??? Przy wykorzystaniu technologii VPN
+
+A)        komputer łączący się z odległą siecią lokalną posiada dwa adresy IP, jeden przyznany przez dostawcę Internetu, drugi to adres z sieci, z którą się łączy
+
+B)        buduje się sieci VLAN
+
+C)        komputer lokalny tuneluje datagramy IP w datdagramach UDP[ad][ae]
+
+D)        tworzy się połączenia między systemami autonomicznymi w Internecie
+
+E)        tworzy się połączenia typu trunk (trunkingowe)
+19. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        zgłoszenia przyłączenia hosta do grupy multicast (rozgłaszanie grupowe na adresy klasy D) są realizowane z wykorzystaniem protokołu ICMP
+
+B)        w protokole IPv6 fragmentacja datagramów jest realizowana w hoście nadającym a nie w routerach
+
+C)        ICMPv6 zastąpił protokół ARP dla protokołu IPv6
+
+D)        ::FFFF jest adresem rozgłoszenia (broadcast) w IPv6
+
+E)        w IPv6 nie ma w ogóle fragmentacji datagramów
+20. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        sieci Frame Relay są sieciami z przełączaniem pakietów, sieci ATM są sieciami z przełączaniem komórek, sieci ISDN są sieciami z komutacją obwodów
+
+B)        ”ramka” w sieciach ATM jest mała, ma stałą wielkość kilkadziesiąt bajtów
+
+C)        sieci Frame Relay i sieci ATM są sieciami z przełączaniem komórek, sieci ISDN są sieciami z komutacją obwodów
+
+D)        sieci Frame Relay i sieci ATM są sieciami z przełączaniem pakietów, sieci ISDN są sieciami z komutacją komórek
+
+E)        sieci Frame Relay są sieciami z przełączaniem komórek, sieci ATM są sieciami z przełączaniem pakietów
+21. Spośród podanych poniżej opracowywanych i/lub obecnych standardów sieci bezprzewodowych proszę wybrać ten o największej przepustowości
+
+A)        802.11ac
+
+B)        802.11n
+
+C)        802.11a
+
+D)        802.11i
+
+E)        802.11gi
+22. Proszę wybrać zdanie prawdziwe (dotyczy mobilnej wersji IP)
+
+A)        komputer mobilny posiada stały domowy adres IP (Home Address) i ten adres wkorzystywany jest w połączeniach TCP
+
+B)        komputer mobilny zmienia adres IP zgodnie z aktualnym przypisaniem do routera i ten adres jest wykorzystywany w połączeniach TCP, wymaga to translacji adresów na routerze
+
+C)        komputer mobilny otrzymuje specjalny adres CoA (Care of Address) od pierwszego routera, do którego się przyłączył i ten adres jest używany w połączeniach TCP
+
+D)        komputer mobilny może się łączyć z serwisami na komputerach stacjonarnych (w trakcie przemieszczania się), ale nie może oferować usług w sieci ze względu na zmiany IP, jakim podlega
+
+E)        komputer musi wykorzystywać IPv6, gdyż dla IPv4 nie przewidziano mobilności
+23. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        działanie standardowego przełącznika Ethernet (switch) jest opisywane głównie w warstwie drugiej modelu ISO OSI, natomiast działanie koncentratora (hub) jest opisywane głównie w warstwie pierwszej tego modelu
+
+B)        działanie standardowego przełącznika Ethernet (switch) i koncentratora (hub) jest opisywane głównie w warstwie drugiej modelu ISO OSI, natomiast działanie routera jest opisywane głównie w warstwie trzeciej tego modelu
+
+C)        sieć Ethernet zbudowana z wykorzystaniem jednego koncentratora (hub) ma fizyczną topologię gwiazdy i logiczną topologię magistrali, natomiast sieć Ethernet zbudowana z wykorzystaniem jednego przełącznika (switch) ma fizyczną topologię gwiazdy i logiczną topologię gwiazdy
+
+D)        sieć Ethernet zbudowana z wykorzystaniem jednego koncentratora (hub) ma fizyczną topologię magistrali i logiczną topologię gwiazdy, natomiast sieć Ethernet zbudowana z wykorzystaniem jednego przełącznika (switch) ma fizyczną topologię magistrali i logiczną topologię gwiazdy
+
+E)        sieć Ethernet zbudowana z wykorzystaniem jednego koncentratora (hub) ma fizyczną topologię gwiazdy i logiczną topologię gwiazdy, natomiast sieć Ethernet zbudowana z wykorzystaniem jednego przełącznika (switch) ma fizyczną topologię gwiazdy i logiczną topologię magistrali
+24. Załóżmy, że ruter 1 i ruter 2 smacą połączone przy wykorzystaniu technologii Fast Ethernet (tzn. ”zwykły” Ethernet 100Mbps). Ponadto każdy z tych ruterów jest połączony z inną siecią lokalną również wykorzystującą technologię Fast Ethernet. W sieci dołączonej do rutera 1 jest komputer A, w sieci dołączonej do rutera 2 jest komputer B. Komputer A wysłał datagram IP o wielkości 1400 bajtów do komputera B. Proszę wybrać zdanie prawdziwe (dotyczy całej trasy datagramu od komputera A do komputera B)
+
+A)        Datagram będzie przesyłany po kolei w trzech ramkach, każda z nich będzie miała inny docelowy adres MAC[af]
+
+B)        Zostanie utworzona jedna ramka i ta ramka zostanie bez zmian przesłana z A do B, w szczególności docelowy adres MAC nie będzie się zmieniał
+
+C)        Datagram będzie przesyłany po kolei w trzech ramkach, każda z nich będzie miała ten sam docelowy adres MAC
+
+D)        Datagram będzie przesyłany w dwóch ramkach, każda z nich będzie miała inny docelowy adres MAC
+
+E)        Datagram będzie przesyłany w dwóch ramkach, każda z nich będzie miała ten sam docelowy adres MAC
+25. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A) komunikaty ICMP są przesyłane w zwykłych pakietach IPv4
+
+B)        komunikat ICMP może spowodować zmianę w tablicy routowania hosta
+
+C)        komunikaty ICMP są przesyłane z wykorzystaniem UDP
+
+D)        komunikaty ICMP są przesyłane w specjalnych ramkach ICMP[ag][ah]
+
+E)        komunikaty ICMP w warstwie transportu wykorzystują TCP
+26. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        typ ramki Ethernet można rozpoznać po wartości w polu Długość/Typ danych
+
+B)        ramki Ethernet II zawierają więcej miejsca na dane (1500 bajtów), podczas gdy ramki według pierwszej specyfikacji IEEE 802.3 maja mniej miejsca na dane (1492 bajty)
+
+C)        ramki Ethernet II zawierają mniej miejsca na dane (1492 bajty), podczas gdy ramki według pierwszej specyfikacji IEEE 802.3 mają więcej miejsca na dane (1500 bajtów)
+
+D)        ramki Ethernet II zawierają tyle samo miejsca na dane co ramki według pierwszej specyfikacji IEEE 802.3 (1500 bajtów), ale w 802.3 są dodatkowe pola LLC + SNAP
+
+E)        nagłówek ramki Ethernet zawiera pole Identyfikator fragmentu
+27. ??? Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        termin trasowanie źródłowe (source routing) oznacza, że źródło datagramu określa przez jakie routery musi przejść datagram, adresy tych routerów znajdują się w opcjach nagłówka IPv4
+
+B)        termin trasowanie źródłowe (source routing) oznacza, że źródło datagramu określa przez jakie routery musi przejść datagram, adresy tych routerów są przesyłane do kolejnych routerów przy pomocy powiązanych komunikatów ICMP
+
+C)        termin trasowanie źródłowe (source routing) oznacza trasowanie z wykorzystaniem jednego protokołu routowania wewnętrznego w obrębie systemu autonomicznego
+
+D)        termin trasowanie źródłowe (source routing) oznacza przekierowanie z wykorzystaniem ICMP
+
+E)        jeśli w tablicy routowania są dwie trasy zgodne z adresem docelowym: trasa sumaryczna i trasa do podsieci, to trasa sumaryczna jest preferowana (ważniejsza)
+28. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        pole TTL znajduje się w nagłówku IPv4
+
+B)        pole TTL znajduje się w nagłówku TCP i nie znajduje się w nagłówku UDP
+
+C)        pole Przesunięcie fragmentu znajduje się w nagłówku TCP
+
+D)        nie wszystkie segmenty TCP są potwierdzane[ai]
+
+E)        nagłówek TCP zawiera sumę kontrolną, ale nagłówek UDP nie zawiera pola sumy kontrolnej
+29. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        nagłówki IPv4 mają różne długości od 20 do 60 bajtów
+
+B)        nagłówki IPv6 mają stałą długość 40 bajtów
+
+C)        nagłówki IPv6 mają stałą długość 128 bajtów
+
+D)        nagłówki IPv6 mają stałą długość 128 bitów
+
+E)        nagłówki IPv6 mają różne długości od 40 do 128 bajtów
+30. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
+
+A)        protokół IP jest protokołem routowalnym a protokół RIP jest protokołem routowania
+
+B)        protokół OSPF jest protokołem routowania wewnętrznego
+
+C)        protokół IP jest protokołem routowania a protokół RIP jest protokołem routowalnym
+
+D)        protokół EIGRP jest protokołem routowania zewnętrznego
+
+E)        protokół BGP jest protokołem routowania zewnętrznego
+
+27.Adres 192.168.7.0 z maską 255.255.252.0 to adres
+
+a) hosta
+
+b) poprawny, ale maska jest niepoprawna
+
+c) sieci
+
+d) rozgłoszenia w podsieci lokalnej
+
+e) niepoprawny
+28.Jeśli adres IP hosta jest 192.168.14.0 z maską 255.255.248.0, to adres sieci jest następujący:
+
+a) 192.168.7.0
+
+b) 192.168.14.0
+
+c) 192.168.8.0
+
+d) 192.168.1.0
+
+e) 192.168.248.0
+29.Adres 255.255.255.255 oraz 152.16.255.255 to adresy odpowiednio
+
+a) obydwa są niepoprawne
+
+b) ograniczonego rozgłoszenia i rozgłoszenia w sieci 152.16.0.0
+
+c) pierwszy jest niepoprawny, drugi to rozgłoszenie w sieci lokalnej
+
+d) drugi jest niepoprawny a pierwszy to rozgłoszenie w sieci lokalnej
+
+e) pierwszy to adres domyślnej trasy w routerze, drugi to rozgłoszenie w sieci
+
+lokalnej
+30.Który z poniższych adresów hosta jest z podsieci, w której można zaadresować 62 komputery?
+
+a) 146.5.30.72/26
+
+b) 182.43.23.0/30
+
+c) 163.32.10.64/62
+
+d) 132.43.23.33/16
+
+e) 133.34.54.255/32

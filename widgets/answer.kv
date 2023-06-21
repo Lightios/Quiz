@@ -1,0 +1,14 @@
+<Answer>:
+    MDLabel:
+        halign:  "left"
+        pos_hint: {"center_x": 0.25, "center_y": 0.5}
+        text: "?"
+        theme_text_color: "Custom"
+        text_color: 1, 1, 1, 1
+        size_hint: 0.5, 1
+        id: label
+    Button:
+        background_color: 1, 0, 0, 0
+        pos_hint: {"x": 0, "center_y": 0.5}
+        size_hint: 0.6, 0.1
+        on_press: root.on_press()

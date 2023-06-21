@@ -1,0 +1,15 @@
+<SelectButton>:
+    size_hint: None, None
+    size: dp(130), dp(130)
+    on_press: self.main_screen.select(self)
+
+    RelativeLayout:
+        MDIcon:
+            icon: root.icon
+            font_size: dp(50)
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            # color: root.color
+        Label:
+            text: root.text
+            pos_hint: {"center_x": 0.5, "center_y": 0.2}
+            bold: True

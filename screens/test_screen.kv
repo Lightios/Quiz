@@ -29,21 +29,27 @@
 
     MDRectangleFlatButton:
         id: check
-        pos_hint: {"center_x": 0.35, "center_y": 0.2}
+        pos_hint: {"center_x": 0.2, "center_y": 0.2}
         text: "Check answer"
         on_press: root.check_answer()
 
     MDRectangleFlatButton:
-        id: clear
-        pos_hint: {"center_x": 0.5, "center_y": 0.2}
+        id: check
+        pos_hint: {"center_x": 0.4, "center_y": 0.2}
         text: "Clear selection"
         on_press: root.clear_selection()
 
     MDRectangleFlatButton:
-        id: next
-        pos_hint: {"center_x": 0.65, "center_y": 0.2}
-        text: "Next question"
+        id: clear
+        pos_hint: {"center_x": 0.6, "center_y": 0.2}
+        text: "Shuffle answers"
         on_press: root.update_labels()
+
+    MDRectangleFlatButton:
+        id: next
+        pos_hint: {"center_x": 0.8, "center_y": 0.2}
+        text: "Next question"
+        on_press: root.next_question()
 
     MDRectangleFlatButton:
         id: exit

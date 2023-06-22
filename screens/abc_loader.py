@@ -4,7 +4,7 @@ class ABCQuestion:
         self.answers = [answer.strip() for answer in answers]
         correct_answers = correct_answers.strip().split()
         self.correct_answers = [ord(answer) - ord('a') for answer in correct_answers]
-        print("?")
+
 
 
 questions = []

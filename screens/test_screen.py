@@ -24,13 +24,15 @@ class TestScreen(Screen):
         self.current_question = None
 
     def on_kv_post(self, base_widget):
+        self.next_question()
+
+    def next_question(self):
+        self.current_question = random.choice(self.questions)
         self.update_labels()
 
     def update_labels(self):
         for answer in self.ALL_ANSWERS:
             self.ids[answer].reset()
-
-        self.current_question = random.choice(self.questions)
 
         self.ids.contents.text = self.current_question.contents
 

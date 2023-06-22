@@ -23,6 +23,8 @@ class MainScreen(Screen):
         if self.selected_mode:
             self.app.root.ids.screen_manager.current = self.selected_mode
 
+        self.app.root.ids.screen_manager.current = "abc"
+
     def select(self, select_button):
         for i in range(3):
             self.ids[f"select_{i}"].color = "white"

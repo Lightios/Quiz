@@ -39,7 +39,7 @@ B) Odbiorca potwierdza liczbę wszystkich odebranych danych jako sumę wielkośc
 C) Odbiorca potwierdza tylko ile w sumie odebrał segmentów, brakujący segment i tak zostanie retransmitowany
 D) Odbiorca zawsze zawiadamia nadawcę, że oczekuje na bajt o numerze o jeden większym od numeru ostatniego bajtu ostatniego odebranego segmentu[b]
 E) Odbiorca nigdy NIE potwierdza odebranych danych dopóki NIE wypełni się okno odbiorcze
-a d
+a
 7. MTU to[c]
 A) Wielkość największego datagramu (pakietu IP), jaki może być przesłany przez pewną sieć (lub połączone sieci) w ramce, przy wykorzystaniu konkretnej technologii, np. Ethernet
 B) Największy rozmiar segmentu, jaki może być przesłany przy pewnym połączeniu TCP
@@ -60,7 +60,7 @@ B) W IPv6 fragmentacja datagramów odbywa się w routerach po drodze pakietu
 C) W IPv6 nagłówek jest uproszczony i krótszy od nagłówka IPv4[f]
 D) W IPv6 jest tylko jeden rodzaj nagłówka
 E) W nagłówku IPv6 NIE ma odpowiednika pola TTL z IPv4, gdyż zastępują go inne mechanizmy
-a d
+a
 10. DNS obejmuje
 A) Określenie numeru IP na podstawie nazwy domenowej i odwrotnie
 B) Określenie numeru IP na podstawie nazwy domenowej, określenie nazwy domenowej na podstawie numeru IP NIE jest możliwe (co czyni sieć w pewnym stopniu bezpieczniejszą)
@@ -88,7 +88,7 @@ B) W WPA2 szyfrowanie jest realizowane z wykorzystaniem algorytmu z kluczem publ
 C) W WPA stosowany jest algorytm szyfrowania z kluczem publicznym i prywatnym o nazwie RC4[h]
 D) W WPA2 stosowany jest algorytm szyfrowania z kluczem publicznym i prywatnym, jest to AES, natomiast w WPA stosowany jest RCA
 E) W WPA i WPA2 szyfrowanie opiera się na algorytmie z kluczem asymetrycznym, jest to MD5
-a c
+a
 14. Spanning Tree Protocol
 A) Jest wykorzystywany do automatycznego blokowania pewnych portów w połączonych przełącznikach warstwy drugiej (switch) tak, by NIE było burzy broadcastów // z
 B) Jest używany do wyznaczania najbliższego sąsiada routera w protokole OSPF
@@ -123,7 +123,7 @@ B) Jeśli w protokole OSPF do jednego przełącznika Ethernet podłączone są c
 C) Protokół routowania RIPv1 opiera swoje działanie na algorytmie Dijkstry wyznaczania najkrótszych ścieżek w grafie, natomiast protokół OSPF na agorytmie Belmana Forda
 D) Protokół routowania RIPv2 oraz protokół OSPF opiera swoje działanie na algorytmie Dijkstry, natomiast RIPv1 i IGRP na agorytmie Belmana Forda
 E) W protokołach routowania wektora odległości routery cyklicznie (np. co 30 sekund) wysyłają do wszystkich swoich sąsiadów swoje tablice routowania
-a b
+a
 19. ??? Proszę wybrać zdanie (zdania) prawdziwe (chyba jest okej)
 A) 224.0.0.9 to przykład adresu klasy D, wykorzystywanego w multiemisji (multicast)
 B) PIM jest protokołem routowania wykorzystywanym w multiemisji (multicast)
@@ -137,14 +137,14 @@ B) Dla 128 bitowego adresu IPv6 multicastu da się wyliczyć odpowiadający mu 4
 C) Jak komputer szuka adresu MAC na podstawie znanego adresu IPv6, to odpowiedni komunikat może dotrzeć od razu do właściwego komputera[k] i tylko do niego (zamiast do wszystkich jak to było w IPv4)
 D) Adresu IPv6 typu "solicited-node multicast" NIE da się wyliczyć na podstawie adresu jednostkowego IPv6
 E) ::127.0.0.1 jest adresem pętli zwrotnej w IPv6
--
+c
 21. Proszę wybrać zdanie (zdania) prawdziweARP
 A) W IPv6 protokół ARP NIE jest wykorzystywany, zamiast niego stosowane są komunikaty ICMPv6
 B) Adres IPv6 typu "solicited-node multicast" jest wykorzystywany, jeśli komputer chce uzyskać adres MAC pewnego innego komputera z tej samej sieci lokalnej
 C) Adres składający się z 128 jedynek jest adresem rozgłoszenia w IPv6[l][m]
 D) Adresy IPv6 mają prostszą strukturę (mniej pól) i są krótsze od adresów IPv4 (dzięki temu routery sprawniej je obsługują)
 E) W nagłówku IPv6 jest pole zawierające sumę kontrolną nagłówka
-a b c
+a b
 22. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) Jeśli w protokole TCP klient ma n bajtów wolnego miejsca w swoim buforze odbiorczym, to może to zgłosić w polu rozmiar okna w nagłówku segmentu przesyłanego do serwera
 B) Technologia Frame Relay jest technologią WAN typu NBMA
@@ -193,14 +193,14 @@ B są takie segmenty TCP, które NIE są potwierdzane[n]
 C pole TTL znajduje się w nagłówku TCP i NIE znajduje się w nagłówku UDP
 D) pole Przesunięcie fragmentu znajduje się w nagłówku TCP[o]
 E) nagłówek TCP zawiera sumę kontrolną, ale nagłówek UDP NIE zawiera pola sumy kontrolnej
-a d
+a b
 29. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) Konfiguracja określana jako router na kiju lub router on a stick polega na połączeniu routera przy pomocy jednego kabla do switcha, na którym są skonfigurowane różne sieci VLAN. Dzięki temu routerowi może działać komunikacja (przesyłanie pakietów) między VLAN-ami
 B) Łącze typu trunk umożliwia połączenie dwóch przełączników (switch) warstwy trzeciej ze zdefiniowanym sieciami VLAN i wówczas do komunikacji między tymi sieciami NIE jest potrzebny oddzielny router
 C) Różne sieci VLAN zdefiniowane na tym samym przełączniku muszą mieć różne adresy IP (adresy sieci)
-D) Różne sieci VLAN zdefiniowane na tym samym przełączniku muszą mieć ten sam adres IP sieci, natomiast ramki zawierają dodatkowe tagi oznaczające przynależność do VLANu[p][q][r][s][t]
+D) Różne sieci VLAN zdefiniowane na tym samym przełączniku muszą mieć ten sam adres IP sieci, natomiast ramki zawierają dodatkowe tagi oznaczające przynależność do VLANu
 E) Do poprawnej pracy VLANów zdefiniowanych na przełącznikach (switch) warstwy drugiej niezbędny jest protokół STP
-a d
+a b
 30. Który z poniższych adresów jest adresem sieci, w której można zaadresować maksymalnie do 126 hostów?
 A 110.110.17.0/25
 B 110.110.17.0/23
@@ -228,35 +228,35 @@ B) jeśli segment TCP zostanie nadesłany z niepoprawna sumą kontrolną, to jes
 C) jeśli ostatni przesłany segment w połączeniu klienta z serwerezasadam TCP ma numer 127 (przesłano już 127 segmentów), to serwer potwierdza ten fakt wysyłając liczbę 127 do klienta
 D) jeśli ostatni przesłany segment w połączeniu klienta z serwerem TCP ma numer 127 (czyli przesłano już 127 segmentów), to serwer potwierdza ten fakt wysyłając liczbę 128 do klienta
 E) jeśli ostatni przesłany bajt w połączeniu klienta z serwerem TCP ma numer 1023, to serwer potwierdza ten fakt wysyłając liczbę 1023 do klienta
-a b d
+a b
 4.??? Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
-A) proponowana wartość MSS (maximum segment size) jest przesyłana w opcjach nagłówka TCP, zatem nagłówek taki jest większy niż 20 bajtów[u][v]
-B) połączenie TCP może być nawiązane po wymianie trzech segmentów (SYN; SYN+ACK; ACK), czyli na drodze trójfazowego uzgodnienia; może być również nawiązane po wymianie czterech sementów (SYN; SYN; SYN+ACK; SYN+ACK)[w]
+A) proponowana wartość MSS (maximum segment size) jest przesyłana w opcjach nagłówka TCP, zatem nagłówek taki jest większy niż 20 bajtów
+B) połączenie TCP może być nawiązane po wymianie trzech segmentów (SYN; SYN+ACK; ACK), czyli na drodze trójfazowego uzgodnienia; może być również nawiązane po wymianie czterech sementów (SYN; SYN; SYN+ACK; SYN+ACK)
 C) selektywne potwierdzanie nadchodzących segmentów jest realizowane w IPv6 poprzez ICMPv6
 D) Okno nadawcze w TCP ma lewą i prawą krawędź, które przesuwają się w prawo w miarę nadchodzacych nowych segmentów, wielkość tego okna jest równa wielkości bufora wykorzystywanego do nadawania dla tego połączenia TCP
 E) aby przeciwdziałać syndromowi głupiego okna (silly window syndrome) stosuje się opóźnione potwierdzanie
-d e
+a b
 5. ??? Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) zastosowanie zasady dzielonego horyzontu powoduje, że router nie przesyła do wszystkich łączy całych wektorów odległości, tylko ich części
 B) w protokole OSPF zasada dzielonego horyzontu nie może być stosowana ???
 C) wadą protokołów wektora odległości jest to, że routery przekazują między sobą całe swoje tablice routowania
 D) jeśli trasa jest w stanie hold-down, to w tym czasie żadna aktualizacja tej trasy nie jest akceptowana przez router[x][y] ???
 E) w protokole RIP (i innych protokołach wektora odległości) po osiągnięciu czasu okreslonego przez Invalid timer trasa jest usuwana z tablicy routowania
-b d
+b
 6. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) odległość administracyjna (administratove distance) jest brana pod uwagę przy porównywaniu dwóch tras do tej samej sieci, ale uzyskanych z różnych protokołów routowania[z]
 B) protokoły wektora odległości są oparte na algorytmie Bellmana Forda wyznaczania najkrótszych ścieżek w grafie
 C) protokoły stanu łącza są oparte na algorytmie Bellmana Forda wyznaczania najkrótszych ścieżek w grafie
 D) potokoły wektora odległości są oparte na algorytmie Dijkstry wyznaczania najkrótszych ścieżek w grafie
 E) potokoły stanu łącza są oparte na algorytmie Dijkstry wyznaczania najkrótszych ścieżek w grafie
-b e
+a b e
 7. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe. Dotyczy interfejsu gniazd.
 A) w serwerze iteracyjnym podobnie jak w serwerze współbieżnym wieloprocesowym klient jest obsługiwany przez inne gniazdo niż to, na którym na serwerze uruchomiona była funkcja bind
 B) funkcja close(s) nie zawsze zamyka gniazdo s, jeśli liczba dowiązań do gniazda jest większa niż jeden to tylko zmniejsza tę liczbę o 1
 C) aby w programie klienckim do gniazda TCP był przypisany jakiś numer portu (np. jakiś dynamicznie przydzielony) musi być wywołana funkcja bind
 D) funkcja fork zwraca do procesu macierzystego numer procesu potomnego a do procesu potomnego zwraca numer procesu macierzystego
 E) po wybraniu przez funkcję select() gotowego gniazda program kliencki wywołuje funkcję connect() na tym gnieździe
-e
+c
 8. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe (dotyczy DNS).
 A) poszukiwanie odwrotne (reverse), tj. wyszukanie nazwy domenowej na podstawie adresu IP jest realizowane z wykorzystaniem domeny arpa.in-addr
 B) standardowo między klientem a domyślnym serwerem DNS realizowane jest zapytanie rekurencyjne
@@ -298,7 +298,7 @@ B) certyfikat cyfrowy standardu X.509 może być wykorzystany w celu złożenia 
 C) certyfikat cyfrowy standardu X.509 zawiera klucz publicznyi klucz prywatny i jest podpisany cyfrowo przez Certificaton Authority
 D) certyfikat cyfrowy standardu X.509 zawiera klucz symetrycznyi jest podpisany cyfrowo przez Certificaton Authority
 E) certyfikat cyfrowy standardu X.509 zawiera m.in. klucz algorytmu MD5 i jest podpisany cyfrowo przez Certificaton Authority
-a b
+a
 14. Adres 116.25.6.0 z maską 255.255.252.0 to adres
 A) Sieci
 B) Niepoprawny
@@ -326,14 +326,14 @@ B) wszystkie routery IPv6 na świecie podłączone do jakiejkolwiek wyspy 6to4 p
 C) w sieci (”wyspie”) IPv6 6to4 kady komputer musi mieć zaimplementowane dwa stosy protokołów IPv4 i IPv6 (dual stack) i pakiety IPv6 są kapsułkowane w pakietach IPv4
 D) w sieci (”wyspie”) 6to4 adresy IPv6 są konstruowane według schematu: zera a po nich adres IPv4 zapisany w notacji dziesiętno kropkowej lub szesnastkowo
 E) w celu połączenia sieci (”wysp”) 6to4 należy skonfigurować tunele między routerami 6to4
-a b e
+b
 18. ??? Przy wykorzystaniu technologii VPN
 A) komputer łączący się z odległą siecią lokalną posiada dwa adresy IP, jeden przyznany przez dostawcę Internetu, drugi to adres z sieci, z którą się łączy
 B) buduje się sieci VLAN
 C) komputer lokalny tuneluje datagramy IP w datdagramach UDP[ad][ae]
 D) tworzy się połączenia między systemami autonomicznymi w Internecie
 E) tworzy się połączenia typu trunk (trunkingowe)
-a b c d e
+a d
 19. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) zgłoszenia przyłączenia hosta do grupy multicast (rozgłaszanie grupowe na adresy klasy D) są realizowane z wykorzystaniem protokołu ICMP
 B) w protokole IPv6 fragmentacja datagramów jest realizowana w hoście nadającym a nie w routerach
@@ -361,7 +361,7 @@ B) komputer mobilny zmienia adres IP zgodnie z aktualnym przypisaniem do routera
 C) komputer mobilny otrzymuje specjalny adres CoA (Care of Address) od pierwszego routera, do którego się przyłączył i ten adres jest używany w połączeniach TCP
 D) komputer mobilny może się łączyć z serwisami na komputerach stacjonarnych (w trakcie przemieszczania się), ale nie może oferować usług w sieci ze względu na zmiany IP, jakim podlega
 E) komputer musi wykorzystywać IPv6, gdyż dla IPv4 nie przewidziano mobilności
-c
+a
 23. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) działanie standardowego przełącznika Ethernet (switch) jest opisywane głównie w warstwie drugiej modelu ISO OSI, natomiast działanie koncentratora (hub) jest opisywane głównie w warstwie pierwszej tego modelu
 B) działanie standardowego przełącznika Ethernet (switch) i koncentratora (hub) jest opisywane głównie w warstwie drugiej modelu ISO OSI, natomiast działanie routera jest opisywane głównie w warstwie trzeciej tego modelu
@@ -375,14 +375,14 @@ B) Zostanie utworzona jedna ramka i ta ramka zostanie bez zmian przesłana z A d
 C) Datagram będzie przesyłany po kolei w trzech ramkach, każda z nich będzie miała ten sam docelowy adres MAC
 D) Datagram będzie przesyłany w dwóch ramkach, każda z nich będzie miała inny docelowy adres MAC
 E) Datagram będzie przesyłany w dwóch ramkach, każda z nich będzie miała ten sam docelowy adres MAC
-b
+a
 25. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) komunikaty ICMP są przesyłane w zwykłych pakietach IPv4
 B) komunikat ICMP może spowodować zmianę w tablicy routowania hosta
 C) komunikaty ICMP są przesyłane z wykorzystaniem UDP
 D) komunikaty ICMP są przesyłane w specjalnych ramkach ICMP[ag][ah]
 E) komunikaty ICMP w warstwie transportu wykorzystują TCP
-b d
+a b
 26. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) typ ramki Ethernet można rozpoznać po wartości w polu Długość/Typ danych
 B) ramki Ethernet II zawierają więcej miejsca na dane (1500 bajtów), podczas gdy ramki według pierwszej specyfikacji IEEE 802.3 maja mniej miejsca na dane (1492 bajty)
@@ -403,7 +403,7 @@ B) pole TTL znajduje się w nagłówku TCP i nie znajduje się w nagłówku UDP
 C) pole Przesunięcie fragmentu znajduje się w nagłówku TCP
 D) nie wszystkie segmenty TCP są potwierdzane[ai]
 E) nagłówek TCP zawiera sumę kontrolną, ale nagłówek UDP nie zawiera pola sumy kontrolnej
-a
+a d
 29. Proszę wybrać stwierdzenie (stwierdzenia) prawdziwe.
 A) nagłówki IPv4 mają różne długości od 20 do 60 bajtów
 B) nagłówki IPv6 mają stałą długość 40 bajtów
